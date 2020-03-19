@@ -81,4 +81,6 @@ end
 
 # Returns 'X' or 'O' depending on winning token of game.
 # ––––––––
-def winner
+def winner(board)
+  
+end
