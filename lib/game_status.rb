@@ -55,15 +55,15 @@ end
 # Accepts a 'board' and returns 'true' if the board has not been won but is full, 'false' if the board is not won and the board is not full, and 'false' if the board is won.
 # ––––––––
 def draw?(board)
-  # # board is full, but not won
-  # if full?(board) && !won?(board)
-  #   true
-  # # board is not full and not won
-  # elsif full?(board) == false
+  # board is full, but not won
+  if full?(board) && !won?(board)
+    true
+  # board is not full and not won
+  elsif full?(board) == false
+    false
+  # false for game won in first row or game won diagonally
+  # elsif won?(board) == [0,1,2] || won?(board) == [0,4,8] || won?(board) == [2,4,6]
   #   false
-  # # false for game won in first row or game won diagonally
-  # # elsif won?(board) == [0,1,2] || won?(board) == [0,4,8] || won?(board) == [2,4,6]
-  # #   false
   end
 end
 
