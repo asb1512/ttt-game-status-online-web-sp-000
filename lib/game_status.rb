@@ -41,7 +41,7 @@ end
 
 
 # Returns 'true' for a draw and 'false' for an in-progress game.
-# ––––
+# ––––––––
 def full?(board)
   # If no 'board_position'/s are empty, returns 'true'. If 'board_position'/s remain empty, returns 'false'.
   if board.none? {|board_position| board_position == " "}
