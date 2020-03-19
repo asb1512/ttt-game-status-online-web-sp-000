@@ -79,4 +79,5 @@ def over?(board)
   end
 end
 
-# 
+# Returns 'X' or 'O' depending on winning token of game.
+# ––––––––
