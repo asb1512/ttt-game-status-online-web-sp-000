@@ -41,6 +41,7 @@ end
 
 
 # Returns 'true' for a draw and 'false' for an in-progress game.
+# ––––
 def full?(board)
   # If no 'board_position'/s are empty, returns 'true'. If 'board_position'/s remain empty, returns 'false'.
   if board.none? {|board_position| board_position == " "}
@@ -50,6 +51,7 @@ end
 
 
 # Accepts a 'board' and returns 'true' if the board has not been won but is full, 'false' if the board is not won and the board is not full, and 'false' if the board is won.
+# ––––
 def draw?(board)
   # board is full, but not won
   if full?(board) == true && won?(board) == false
@@ -64,6 +66,7 @@ def draw?(board)
 end
 
 # Accepts a 'board' and returns 'true' for a draw, a won game w/ full board, won game w/ incomplete board, and returns 'false' for an in-progress game.
+# ––––
 def over?(board)
   if full?(board) == true && won?(board) == true
     true
