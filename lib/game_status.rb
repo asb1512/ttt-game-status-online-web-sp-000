@@ -84,7 +84,7 @@ end
 # Returns 'X' or 'O' depending on winning token of game.
 # ––––––––
 def winner(board)
-  if won?(board) == true 
+  if won?(board)
     
   end
 end
