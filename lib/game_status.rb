@@ -52,7 +52,7 @@ end
 # Accepts a 'board' and returns 'true' if the board has not been won but is full, 'false' if the board is not won and the board is not full, and 'false' if the board is won.
 def draw?(board)
   # board is full, but not won
-  if full?(board) == true && won?(board) == true
+  if full?(board) == true && won?(board) == false
     true
   # board is not full and not won
   elsif full?(board) == false
